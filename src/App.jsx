@@ -10,12 +10,12 @@ import { Routes, Route } from 'react-router-dom';
 import LoginForm from '../components/LoginForm';
 import RegisterForm from '../components/registerForm';
 
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
   return (
     <div className='App'>
-      <HashRouter>
+      <BrowserRouter>
         <Nav />
         <Routes>
           <Route path='/' element={<Home />} />
@@ -27,7 +27,7 @@ const App = () => {
           <Route path='/registrarse' element={<RegisterForm />} />
         </Routes>
         <Footer />
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 };
